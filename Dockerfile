@@ -1,3 +1,4 @@
+FROM gcr.io/flame-public/rbe-ubuntu20-04:latest
 
 RUN apt update && apt install -y build-essential libstdc++6 libtinfo5
 
