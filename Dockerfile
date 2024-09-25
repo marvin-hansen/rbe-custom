@@ -1,5 +1,5 @@
 
-RUN apt update && apt install -y libstdc++6 libtinfo5
+RUN apt update && apt install -y build-essential libstdc++6 libtinfo5
 
 # Clean up
 RUN rm -rf /var/lib/apt/lists/* && apt-get clean
