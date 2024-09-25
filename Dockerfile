@@ -1,8 +1,5 @@
 
-RUN apt update && apt install -y build-essential libstdc++6 libtinfo5
-
-# Install libpq for Diesel
-RUN  apt install  -y libpq5 libpq-dev libxml2 libxml2-dev
+RUN apt update && apt install -y libstdc++6 libtinfo5
 
 # Clean up
 RUN rm -rf /var/lib/apt/lists/* && apt-get clean
